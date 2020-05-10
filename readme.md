@@ -11,7 +11,7 @@ Here's a quick summary:
 
 If you're new to them here are a few steps to help you get started:
 
-* Ensure you're in the on the `development` branch. `git checkout development`
+* Ensure you're in the `development` branch. `git checkout development`
 * Ensure this branch is up to date. `git pull`
 * Create a new branch `git checkout -b issue-number-name-of-feature`
 * Add your files.  `git add .` or if you've changed a lot of files use `git add -p` to be prompted about small chunks of code
