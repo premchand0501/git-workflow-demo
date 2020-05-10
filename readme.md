@@ -20,15 +20,18 @@ If you're new to them here are a few steps to help you get started:
 * Submit a new pull request to the team and request a review
 * Merge PR into `development` and make sure the branch is deleted
 
-### Client testing
-Once the code is ready for the client to test, merge to staging doing the following
+### Production deployment
+Once the code is ready for production, merge to master doing the following
 
-* Create a new branch off of staging, `git checkout -b issue-number-name-of-feature-staging`
+* Create a new branch off of master, `git checkout -b issue-number-name-of-feature-master`
 * Then cherry pick the PR that was merged into development `git cherry-pick -m 1 <PR hash>`
 * Push the branch to Github
 * Submit a new pull request and assign to one of the other developers
-* Merge PR into `staging` and make sure the branch is deleted
+* Merge PR into `master` and make sure the branch is deleted
 
 ### Handling messes/mistakes
 * If your local repo has many unwanted changes and want to clear them all use `git reset --hard`
+* If you want to save some changes and want to work on another issue use `git stash save {any name for future reference}`. To view all stashed items use `git stash list`, this will show as 
+  `stash@{0}: On development: readme`
+  And then you can use `git stash apply 0` to bring back this item.
 * Sometimes we forget to make new branch and start the coding in `development` branch and then commit change in `development` branch, to uncommit change you can use `git reset HEAD~1`. This command will uncommit your local change and you can create new branch with these changes.
