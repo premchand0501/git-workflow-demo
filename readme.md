@@ -11,7 +11,7 @@ Here's a quick summary:
 
 If you're new to them here are a few steps to help you get started:
 
-* Ensure you're in the on the `development` branch. `git checkout development`
+* Ensure you're in the `development` branch. `git checkout development`
 * Ensure this branch is up to date. `git pull`
 * Create a new branch `git checkout -b issue-number-name-of-feature`
 * Add your files.  `git add .` or if you've changed a lot of files use `git add -p` to be prompted about small chunks of code
@@ -28,3 +28,7 @@ Once the code is ready for the client to test, merge to staging doing the follow
 * Push the branch to Github
 * Submit a new pull request and assign to one of the other developers
 * Merge PR into `staging` and make sure the branch is deleted
+
+### Handling messes/mistakes
+* If your local repo has many unwanted changes and want to clear them all use `git reset --hard`
+* Sometimes we forget to make new branch and start the coding in `development` branch and then commit change in `development` branch, to uncommit change you can use `git reset HEAD~1`. This command will uncommit your local change and you can create new branch with these changes.
